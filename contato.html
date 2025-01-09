@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Projeto Portfólio">
 		<meta name="author" content="Pedro Vieira">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
-		<title>Meu Perfil</title>
+		<!-- Link para a Folha de Estilo da Página - CSS -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <title>Meu Perfil</title>
 	</head>
     <body>
         <!-- Cabeçalho da Página (header) -->
         <header>
     
             <!-- Div Conteudo do Cabeçalho -->
-            <div id="header_content">
+            <div id="header_content" class="flex">
     
                 <!-- Titulo do Cabeçalho -->
                 <div id="titulo">
     
                     <!-- Meu Nome -->
-                     <h1> Pedro Vieira</h1>
+                     <h1>Pedro Vieira</h1>
     
                 </div>
     
@@ -48,11 +54,11 @@
 		<main>
 
 			 <!-- Seção Formulário de Contato e Redes Sociais -->
-             <section id="contact">
+             <section id="contact" class="flex">
 
                 <!-- Seção do Formulário -->
                 <form action="#" method="submit" id="formulario">
-
+                    
                     <label for="name">Nome: </label>
                     <input id="name" type="text" name="name" placeholder="Digite seu nome" >
                     <span id="txtNome"></span>
@@ -73,9 +79,13 @@
                 </form>
 
                 <!-- Seção do Google Maps -->
-                <article id="mapa">
-                    <p>Davis Station</p>
+                <article id="mapa" class="flex_start">
+
+                    <div id="endereco">
+                        <p>Davis Station</p>
 	                    <p>Antártida</p>
+                    </div>
+                    
 
 	                    <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6960.117624813113!2d77.95801870760927!3d-68.57676564901597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb1f366cd8ba7809d%3A0xc0e41055c81a02e0!2sDavis%20Station%2C%20Ant%C3%A1rtida!5e1!3m2!1spt-BR!2sbr!4v1736206019800!5m2!1spt-BR!2sbr" 
@@ -95,21 +105,17 @@
 		</main>
 
 		<!-- Rodapé da Página (footer) -->
-		<footer>
+		<footer class="flex">
 
 			<!-- Seção de Contato - Redes Sociais -->
             <section id="redes_sociais">
 
                     <a href="https://www.linkedin.com/in/pedrohq-vieira/">
-                        <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+                        <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
                     </a>
                     <a href="https://github.com/StPVieira">
-                        <img src="assets/img/github.svg" alt="Github" />
-                    </a>
-                    <a href="">
-                        <img src="assets/img/instagram.svg" alt="Instagram" />
-                    </a>
-
+                        <img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+                    </a>   
             </section>
 
 			<h3>

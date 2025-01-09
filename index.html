@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Pedro Vieira">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <!-- Link para a Folha de Estilo da Página - CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Meu Perfil</title>
 </head>
 <body>
@@ -14,7 +20,7 @@
     <header>
 
         <!-- Div Conteudo do Cabeçalho -->
-        <div id="header_content">
+        <div id="header_content" class="flex">
 
             <!-- Titulo do Cabeçalho -->
             <div id="titulo">
@@ -49,18 +55,20 @@
     <main>
 
         <!-- Seção sobre mim -->
-        <section id="about">
+        <section id="about" class="flex_start">
 
             <!-- Título da Seção -->
             <h2> Sobre mim</h2>
 
             <!-- Conteúdo da Seção-->
-            <div id="conteudo">
+            <div id="conteudo" class="flex">
 
                 <!-- Minha foto -->
                 <img
                     src="./assets/img/perfil.jpg"
                     alt="Foto do criador desse conteúdo"
+
+                    class="img_profile"
                 />
 
                 <!-- Texto sobre mim -->
@@ -79,13 +87,13 @@
         </section>
 
         <!-- Seção contendo meu vídeo preferido -->
-        <section id="video">
+        <section id="video" class="flex_start">
 
             <!-- Título da Seção -->
             <h2>Meu vídeo favorito:</h2>
 
             <!-- Video da Seção -->
-            <div id="youtube">
+            <div id="youtube" class="flex">
                 <iframe width="560" height="315"
                 src="https://www.youtube.com/embed/lKzcsVBcH9I?si=_IDg-rBsoni0JNp9"
                 title="YouTube video player" 
@@ -99,19 +107,16 @@
     </main>
 
     <!-- Rodapé da Página (footer) -->
-    <footer>
+    <footer class="flex">
 
         <!-- Seção de Contato - Redes Sociais -->
         <section id="redes_sociais">
 
-            <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+            <a href="https://www.linkedin.com/in/pedrohq-vieira/">
+                <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
             </a>
-            <a href="">
-                <img src="assets/img/github.svg" alt="GitHub" />
-            </a>
-            <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
+            <a href="https://github.com/StPVieira">
+                <img src="assets/img/github.svg" alt="GitHub" class="social_icon"/>
             </a>
 
         </section>
